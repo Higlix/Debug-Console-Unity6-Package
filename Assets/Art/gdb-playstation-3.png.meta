@@ -1,0 +1,474 @@
+fileFormatVersion: 2
+guid: f4a050c8d19fb3447a4f2bdf8b21740e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3568540503306911316
+    second: gdb-playstation-3_0
+  - first:
+      213: -8784147043569246610
+    second: gdb-playstation-3_1
+  - first:
+      213: 3533778267621938494
+    second: gdb-playstation-3_2
+  - first:
+      213: 6261698568567998146
+    second: gdb-playstation-3_3
+  - first:
+      213: 6975017350011782117
+    second: gdb-playstation-3_4
+  - first:
+      213: -7641124614277127808
+    second: gdb-playstation-3_5
+  - first:
+      213: 8958434710532046319
+    second: gdb-playstation-3_6
+  - first:
+      213: 3831940148706715699
+    second: gdb-playstation-3_7
+  - first:
+      213: -4760918831259946673
+    second: gdb-playstation-3_8
+  - first:
+      213: 423543946847372353
+    second: gdb-playstation-3_9
+  - first:
+      213: -483690469613332498
+    second: gdb-playstation-3_10
+  - first:
+      213: 8399402487106768321
+    second: gdb-playstation-3_11
+  - first:
+      213: 188547579204189254
+    second: gdb-playstation-3_12
+  - first:
+      213: -7406350378863543357
+    second: gdb-playstation-3_13
+  - first:
+      213: -7411748992253073743
+    second: gdb-playstation-3_14
+  - first:
+      213: 5512196961371265700
+    second: gdb-playstation-3_15
+  - first:
+      213: 8961394494742447352
+    second: gdb-playstation-3_16
+  - first:
+      213: -4379568623946552474
+    second: gdb-playstation-3_17
+  - first:
+      213: 7437282637978799347
+    second: gdb-playstation-3_18
+  - first:
+      213: 6061450137646213894
+    second: gdb-playstation-3_19
+  - first:
+      213: -3424166632067969574
+    second: gdb-playstation-3_20
+  - first:
+      213: -744642262540676658
+    second: gdb-playstation-3_21
+  - first:
+      213: 19973974496481289
+    second: gdb-playstation-3_22
+  - first:
+      213: 1098370749492100006
+    second: gdb-playstation-3_23
+  - first:
+      213: -6164638686786875053
+    second: gdb-playstation-3_24
+  - first:
+      213: -6646404548727741332
+    second: gdb-playstation-3_25
+  - first:
+      213: 4737237456681864238
+    second: gdb-playstation-3_26
+  - first:
+      213: -9110816858605337408
+    second: gdb-playstation-3_27
+  - first:
+      213: -4033889099157729707
+    second: gdb-playstation-3_28
+  - first:
+      213: -4500750922185568102
+    second: gdb-playstation-3_29
+  - first:
+      213: 7804756626001501819
+    second: gdb-playstation-3_30
+  - first:
+      213: 8701540790413928627
+    second: gdb-playstation-3_31
+  - first:
+      213: 3140505614743562705
+    second: gdb-playstation-3_32
+  - first:
+      213: -88153344404988700
+    second: gdb-playstation-3_33
+  - first:
+      213: -317747771831717944
+    second: gdb-playstation-3_34
+  - first:
+      213: -9071141650737984558
+    second: gdb-playstation-3_35
+  - first:
+      213: -5816627535581507867
+    second: gdb-playstation-3_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enter-Icon
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 804
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9e8eda731559b20800000000000000
+      internalID: 3140505614743562705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Close-Icon-1
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 352
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df810865af797d244af169b4965870e9
+      internalID: -2136165138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Close-Icon-2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 352
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b17dccb47a4e047b47694b4ab214bb
+      internalID: 1785364732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Close-Icon-3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 352
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106ff983e0c2c8746819adbd8ddc73a7
+      internalID: 1407106421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Close-Icon-4
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 352
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1a8189ec42f9048bf07a98191c33ae
+      internalID: -1744509913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window-Drag-Icon-1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 466
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba04d2b9111a29b45af589449d36d7a8
+      internalID: 1310537214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window-Drag-Icon-2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 208
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd40d68c98caf541bd3da782de11726
+      internalID: 489978206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minimize-Icon
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 16
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7890891fb7950eb46b8921059cf22fae
+      internalID: -2097225257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f0fa7d9793e415346a620a5898500c67
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Close-Icon-1: -2136165138
+      Close-Icon-2: 1785364732
+      Close-Icon-3: 1407106421
+      Close-Icon-4: -1744509913
+      Enter-Icon: 3140505614743562705
+      Minimize-Icon: -3568540503306911316
+      Window-Drag-Icon-1: 1310537214
+      Window-Drag-Icon-2: 489978206
+      gdb-playstation-3_1: -8784147043569246610
+      gdb-playstation-3_10: -483690469613332498
+      gdb-playstation-3_11: 8399402487106768321
+      gdb-playstation-3_12: 188547579204189254
+      gdb-playstation-3_13: -7406350378863543357
+      gdb-playstation-3_14: -7411748992253073743
+      gdb-playstation-3_15: 5512196961371265700
+      gdb-playstation-3_16: 8961394494742447352
+      gdb-playstation-3_17: -4379568623946552474
+      gdb-playstation-3_18: 7437282637978799347
+      gdb-playstation-3_19: 6061450137646213894
+      gdb-playstation-3_2: 3533778267621938494
+      gdb-playstation-3_20: -3424166632067969574
+      gdb-playstation-3_21: -744642262540676658
+      gdb-playstation-3_22: 19973974496481289
+      gdb-playstation-3_23: 1098370749492100006
+      gdb-playstation-3_24: -6164638686786875053
+      gdb-playstation-3_25: -6646404548727741332
+      gdb-playstation-3_26: 4737237456681864238
+      gdb-playstation-3_27: -9110816858605337408
+      gdb-playstation-3_28: -4033889099157729707
+      gdb-playstation-3_29: -4500750922185568102
+      gdb-playstation-3_3: 6261698568567998146
+      gdb-playstation-3_30: 7804756626001501819
+      gdb-playstation-3_31: 8701540790413928627
+      gdb-playstation-3_32: 1604032087
+      gdb-playstation-3_33: -88153344404988700
+      gdb-playstation-3_34: -317747771831717944
+      gdb-playstation-3_35: -9071141650737984558
+      gdb-playstation-3_36: -5816627535581507867
+      gdb-playstation-3_4: 6975017350011782117
+      gdb-playstation-3_5: -7641124614277127808
+      gdb-playstation-3_6: 8958434710532046319
+      gdb-playstation-3_7: 3831940148706715699
+      gdb-playstation-3_8: -4760918831259946673
+      gdb-playstation-3_9: 423543946847372353
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
