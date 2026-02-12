@@ -6,6 +6,8 @@ namespace Reka.DebugConsole.Settings
 	public class ConsoleSettings : ScriptableObject
 	{
 		[Header("Console Settings")]
-		[SerializeField] private string consoleCommandPrefix = "/";
+		[SerializeField] private bool _consoleVisibleOnStart = true;
+
+		public bool ConsoleVisibleOnStart { get => _consoleVisibleOnStart; }
 	}
 }

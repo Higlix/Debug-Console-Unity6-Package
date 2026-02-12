@@ -16,7 +16,7 @@ namespace Reka.DebugConsole
 		[SerializeField] private TMP_Text _consoleText;
 		[SerializeField] private RectTransform _consoleViewRectTransform;
 
-		void Start()
+		void Awake()
 		{
 			try
 			{
