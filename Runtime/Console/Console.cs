@@ -31,14 +31,7 @@ namespace Reka.DebugConsole
 
 		private void Start()
 		{
-			if (_consoleSettings.ConsoleVisibleOnStart)
-			{
-				_consoleView.gameObject.SetActive(true);
-			}
-			else
-			{
-				_consoleView.gameObject.SetActive(false);
-			}
+			_consoleView.gameObject.SetActive(_consoleSettings.ConsoleVisibleOnStart);
 		}
 
 		private void Update()

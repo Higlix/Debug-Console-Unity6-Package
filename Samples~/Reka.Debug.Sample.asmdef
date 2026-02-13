@@ -1,0 +1,16 @@
+{
+    "name": "Reka.Debug.Sample",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d8fda4889e8d6f041be9d6fd19c6d03e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
