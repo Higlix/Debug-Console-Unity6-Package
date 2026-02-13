@@ -1,0 +1,18 @@
+{
+	"name": "com.reka.debug.console",
+	"displayName": "Reka Debug Console",
+	"version": "1.0.0",
+	"unity": "2021.3",
+	"description": "A debug console for Unity.",
+	"dependencies": {
+		"com.unity.inputsystem": "1.1.0",
+		"com.unity.ugui": "2.0.0",
+		"com.unity.textmeshpro": "3.0.0"
+	},
+
+	"author": {
+		"name": "Reka",
+		"email": "contact@rekastudios.com",
+		"url": "https://rekastudios.com"
+	}
+}
