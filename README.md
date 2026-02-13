@@ -27,6 +27,9 @@ https://github.com/Higlix/Debug-Console-Unity6-Package.git
 
 ## Quick Start
 
+0. **Import the samples**
+   In the Package Manager, find **Reka Debug Console**, expand **Samples**, and click **Import** next to **Basic Setup**. This copies the sample prefab, scene, settings, and commands into your `Assets/` folder where they are fully editable.
+
 1. **Create a ConsoleSettings asset**
    Right-click in the Project window → **Create → Console → ConsoleSettings**.
    Configure whether the console is visible on start and assign your commands.
@@ -99,7 +102,7 @@ com.reka.debug.console/
 │   │   └── ConsoleView.cs
 │   └── ConsoleSettings/
 │       └── ConsoleSettings.cs
-└── Samples/
+└── Samples~/                        (importable via Package Manager)
     ├── Art/
     ├── Prefabs/
     │   └── Console.prefab

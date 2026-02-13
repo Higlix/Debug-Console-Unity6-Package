@@ -10,6 +10,14 @@
 		"com.unity.textmeshpro": "3.0.0"
 	},
 
+	"samples": [
+		{
+			"displayName": "Basic Setup",
+			"description": "Console prefab, example scene, default settings, and sample commands.",
+			"path": "Samples~"
+		}
+	],
+
 	"author": {
 		"name": "Reka",
 		"email": "contact@rekastudios.com",
