@@ -25,7 +25,7 @@ Everything else — the console UI, input handling, and sample scripts — is pr
 In your Unity project, open **Window > Package Manager > + > Add package from git URL...** and enter:
 
 ```
-https://github.com/YOUR_USERNAME/YOUR_REPO.git
+https://github.com/Higlix/Debug-Console-Unity6-Package.git
 ```
 
 ### Local / From Disk
