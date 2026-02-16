@@ -1,6 +1,7 @@
 using UnityEngine;
+using Reka.Runtime.CommandSO;
 
-namespace Reka.DebugConsole.Settings
+namespace Reka.Runtime.ConsoleSettingsSO
 {
 	[CreateAssetMenu(fileName = "ConsoleSettings", menuName = "Console/ConsoleSettings")]
 	public class ConsoleSettings : ScriptableObject

@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Reka.DebugConsole.Settings;
+using Reka.Runtime.CommandSO;
+using Reka.Runtime.ConsoleSettingsSO;
 
-namespace Reka.DebugConsole
+namespace Reka.Samples.DebugConsole
 {
 	public sealed class Console : MonoBehaviour
 	{

@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace Reka.DebugConsole
+namespace Reka.Runtime.CommandSO
 {
 	[CreateAssetMenu(fileName = "Command", menuName = "DebugConsole/Command")]
 	public class Command : ScriptableObject

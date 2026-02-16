@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Reka.DebugConsole
+namespace Reka.Samples.DebugConsole
 {
 	public sealed class ConsoleView : MonoBehaviour, IDragHandler, IPointerDownHandler
 	{

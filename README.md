@@ -1,6 +1,15 @@
 # Reka Debug Console
 
-An in-game debug console for Unity. Type commands at runtime to trigger custom logic, view logs, warnings, and errors — all from a draggable, resizable overlay.
+A lightweight, extensible in-game debug console for Unity. Define commands as ScriptableObjects, subscribe to them from your own scripts, and execute them at runtime through a console overlay.
+
+## What the Package Provides
+
+The package ships two core ScriptableObject types in `Runtime/`:
+
+- **Command** (`Create > DebugConsole > Command`) — A ScriptableObject that represents a single console command. Each command has a name, description, and an extension (e.g. `test.random.hello`). Other scripts subscribe to its `OnCommandExecuted` event to run logic when the command is executed.
+- **ConsoleSettings** (`Create > Console > ConsoleSettings`) — A ScriptableObject that holds configuration: whether the console is visible on start, and the list of registered Command assets.
+
+Everything else — the console UI, input handling, and sample scripts — is provided in the **Samples** folder as a starting point. You are free to build your own console implementation on top of the two core types.
 
 ## Requirements
 
@@ -13,79 +22,78 @@ An in-game debug console for Unity. Type commands at runtime to trigger custom l
 
 ### Git URL (recommended)
 
-In your Unity project, open **Window → Package Manager → + → Add package from git URL…** and enter:
+In your Unity project, open **Window > Package Manager > + > Add package from git URL...** and enter:
 
 ```
-https://github.com/Higlix/Debug-Console-Unity6-Package.git
+https://github.com/YOUR_USERNAME/YOUR_REPO.git
 ```
 
 ### Local / From Disk
 
 1. Clone or download this repository.
-2. In Unity, open **Window → Package Manager → + → Add package from disk…**
+2. In Unity, open **Window > Package Manager > + > Add package from disk...**
 3. Navigate to the package folder and select `package.json`.
 
-## Quick Start
+## Quick Start (using the Sample)
 
-0. **Import the samples**
-   In the Package Manager, find **Reka Debug Console**, expand **Samples**, and click **Import** next to **Basic Setup**. This copies the sample prefab, scene, settings, and commands into your `Assets/` folder where they are fully editable.
+The **Samples** folder contains a ready-to-use console setup. After installing the package, import the sample from the Package Manager (**Reka Debug Console > Samples > Basic Setup > Import**).
 
-1. **Create a ConsoleSettings asset**
-   Right-click in the Project window → **Create → Console → ConsoleSettings**.
-   Configure whether the console is visible on start and assign your commands.
+The sample includes:
 
-2. **Create Command assets**
-   Right-click in the Project window → **Create → DebugConsole → Command**.
-   Fill in:
-    - **Command Name** — display name (e.g. "Hello World").
+| Item                                                 | Description                                                                        |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `Prefabs/Console.prefab`                             | A preconfigured Console with UI, input field, and buttons. Drag it into any scene. |
+| `Prefabs/RandomObject.prefab`                        | An example GameObject that subscribes to a command.                                |
+| `ScriptableObjects/ConsoleSettingsDefault.asset`     | Default settings with the sample command already registered.                       |
+| `ScriptableObjects/Commands/test.random.hello.asset` | A sample Command asset.                                                            |
+| `Scene/Test.unity`                                   | A test scene with everything wired up.                                             |
+
+### Steps
+
+1. Open the sample scene `Test.unity`, or drag `Console.prefab` into your own scene.
+2. Press **Play**, then press **F3** to toggle the console.
+3. Type `test.random.hello` and press **Enter**. The `RandomObject` in the scene will log the result.
+
+### Creating New Commands
+
+1. Right-click in the Project window > **Create > DebugConsole > Command**.
+2. Fill in the fields:
+    - **Command Name** — a display name (e.g. "Spawn Enemy").
     - **Command Description** — what the command does.
-    - **Command Extension** — the identifier typed in the console (e.g. `test.hello`). Only letters, numbers, and dots are allowed.
+    - **Command Extension** — the identifier users type in the console (e.g. `debug.spawn.enemy`). Only letters, numbers, and dots are allowed.
+3. Open your **ConsoleSettings** asset (e.g. `ConsoleSettingsDefault`) and add the new Command to the **Registered Commands** list.
 
-3. **Add the Console to your scene**
-    - Add a GameObject with the `Console` component.
-    - Assign the `ConsoleView` and `ConsoleSettings` references in the Inspector.
-    - If using the included sample prefab, drag `Console.prefab` into your scene.
+### Subscribing to a Command
 
-4. **Press Play**
-    - Press **F3** to toggle the console.
-    - Type a command extension (e.g. `test.hello`) and press **Enter** or click the Enter button.
-
-## Listening to Commands
-
-Subscribe to a Command asset's `OnCommandExecuted` event from any MonoBehaviour:
+To run your own logic when a command is executed, request the command from the Console singleton and subscribe to its event:
 
 ```csharp
 using UnityEngine;
-using Reka.DebugConsole;
+using Reka.Runtime.CommandSO;
 
 public class MyHandler : MonoBehaviour
 {
-    [SerializeField] private Command _helloCommand;
-
-    private void OnEnable()
+    private void Start()
     {
-        _helloCommand.OnCommandExecuted += HandleHello;
+        // Request a registered command by its extension
+        Command command = Console.Instance.RequestCommand("debug.spawn.enemy");
+
+        if (command != null)
+        {
+            command.OnCommandExecuted += OnSpawnEnemy;
+        }
     }
 
-    private void OnDisable()
+    private void OnSpawnEnemy(string commandExtension, string[] args)
     {
-        _helloCommand.OnCommandExecuted -= HandleHello;
-    }
-
-    private void HandleHello(string extension, string[] args)
-    {
-        Debug.Log($"Hello executed with {args.Length} arguments");
+        // args contains everything after the command extension, split by space
+        Debug.Log($"Spawning enemy! Args: {string.Join(", ", args)}");
     }
 }
 ```
 
-The first parameter is the command extension string; the second is an array of space-separated arguments (everything after the command name).
-
-## Console Features
-
-- **Draggable & resizable** — drag the console window to reposition; drag the corner to resize.
-- **Log capture** — all `Debug.Log`, `Debug.LogWarning`, and `Debug.LogError` messages are displayed with color coding and timestamps.
-- **Toggle** — press **F3** to show/hide the console at any time.
+- `Console.Instance.RequestCommand(extension)` returns the `Command` ScriptableObject registered with that extension, or `null` if not found.
+- `command.OnCommandExecuted` fires when the user types and submits that command. The first parameter is the extension string; the second is an array of space-separated arguments.
 
 ## Package Structure
 
@@ -97,15 +105,19 @@ com.reka.debug.console/
 │   ├── Reka.Debug.asmdef
 │   ├── Command/
 │   │   └── Command.cs
-│   ├── Console/
-│   │   ├── Console.cs
-│   │   └── ConsoleView.cs
 │   └── ConsoleSettings/
 │       └── ConsoleSettings.cs
-└── Samples~/                        (importable via Package Manager)
+└── Samples~/
+    ├── Reka.Debug.Sample.asmdef
     ├── Art/
     ├── Prefabs/
-    │   └── Console.prefab
+    │   ├── Console.prefab
+    │   └── RandomObject.prefab
+    ├── Scripts/
+    │   ├── RandomObject.cs
+    │   └── Console/
+    │       ├── Console.cs
+    │       └── ConsoleView.cs
     ├── Scene/
     │   └── Test.unity
     └── ScriptableObjects/
