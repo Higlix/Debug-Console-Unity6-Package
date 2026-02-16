@@ -168,12 +168,10 @@ namespace Reka.Samples.DebugConsole
 				_ => "#FFFFFF" // Log
 			};
 			_consoleText.text += Colorize(text, color);
-		}
-
-		/// <summary>Add user command output in blue with timestamp.</summary>
-		public void AddConsoleTextAsCommand(string text)
-		{
-			_consoleText.text += Colorize(text, "#003eFF");
+			if (_consoleText.text.Length > 1000)
+			{
+				_consoleText.text = _consoleText.text.Substring(_consoleText.text.Length - 1000);
+			}
 		}
 	}
 }

@@ -42,5 +42,10 @@ namespace Reka.Samples.DebugConsole
 				return;
 			}
 		}
+
+		private void Update()
+		{
+			Debug.Log("RandomObject: Update");
+		}
 	}
 }
